@@ -1058,7 +1058,7 @@ body {
 
     .iframe-container {
         height: 50vh;
-        min-height: 350px;
+        min-height: 600px;
         border-radius: 12px;
     }
 
@@ -1273,7 +1273,6 @@ body {
 }
 
 a.navbar-item {
-    background: #fafafa;
     color: #000;
 }
 
