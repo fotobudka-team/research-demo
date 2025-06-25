@@ -35,7 +35,7 @@ Make sure to add these images before deploying:
 
 2. **Demo URL** (`index.html`):
    - Update the iframe src URL to your actual Gradio demo
-   - Currently set to: `https://eaa815602f4fc7e3be.gradio.live/`
+   - Currently set to: `https://ea6024e4e97575689b.gradio.live/`
 
 ## Local Testing
 
