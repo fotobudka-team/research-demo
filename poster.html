@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plakat i publikacje - Fotobudka AI</title>
+    <meta name="description" content="Poznaj badania techniczne i metodologię stojącą za technologią przetwarzania zdjęć AI Fotobudka.">
+    <meta name="keywords" content="badania AI, research computer vision, badacze machine learning, poster przetwarzania obrazów">
+    <meta name="author" content="Zespół Badawczy Fotobudka">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Plakat i publikacje - Fotobudka AI">
+    <meta property="og:description" content="Badania techniczne i metodologia stojąca za przetwarzaniem zdjęć AI.">
+    <meta property="og:image" content="assets/poster.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📸</text></svg>">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html" aria-label="Fotobudka Strona Główna">
+                <span class="brand-text">
+                    <i class="fas fa-camera-retro brand-icon" aria-hidden="true"></i>
+                    Fotobudka
+                </span>
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasic" class="navbar-menu">
+            <div class="navbar-end">
+                <a href="index.html" class="navbar-item">
+                    <span class="icon-text">
+                        <span class="icon"><i class="fas fa-play" aria-hidden="true"></i></span>
+                        <span>Demo</span>
+                    </span>
+                </a>
+                <a href="poster.html" class="navbar-item is-active" aria-current="page">
+                    <span class="icon-text">
+                        <span class="icon"><i class="fas fa-file-image" aria-hidden="true"></i></span>
+                        <span>Plakat i publikacje</span>
+                    </span>
+                </a>
+                <a href="team.html" class="navbar-item">
+                    <span class="icon-text">
+                        <span class="icon"><i class="fas fa-users" aria-hidden="true"></i></span>
+                        <span>Zespół</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero is-medium hero-dark">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="hero-content">
+                    <h1 class="title is-1 hero-title">
+                        <i class="fas fa-microscope mr-3" aria-hidden="true"></i>
+                        Plakat i publikacje
+                    </h1>
+                    <h2 class="subtitle is-4 hero-subtitle">
+                        Jesteśmy na ICCS 2025 oraz działamy w open source!
+                    </h2>
+                    <div class="hero-badges mt-5">
+                        <span class="tag is-light is-medium mr-2">
+                            <i class="fas fa-brain mr-2" aria-hidden="true"></i>
+                            ICCS 2025 - 140 pkt. MNISW
+                        </span>
+                        <span class="tag is-light is-medium mr-2">
+                            <i class="fas fa-chart-line mr-2" aria-hidden="true"></i>
+                            Repozytoria open source na GitHub
+                        </span>
+                        <span class="tag is-light is-medium">
+                            <i class="fas fa-cogs mr-2" aria-hidden="true"></i>
+                            Plakat
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Poster Section -->
+    <section class="section poster-section">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-8">
+                    <div class="poster-container" onclick="openModal()">
+                        <figure class="image">
+                            <img src="assets/poster.png" alt="Fotobudka Research Poster" class="poster-image">
+                        </figure>
+                        <div class="poster-overlay">
+                            <div class="poster-overlay-content">
+                                <i class="fas fa-search-plus fa-3x"></i>
+                                <p class="mt-4 is-size-5">Click to view full size</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="column is-4">
+                    <div class="content poster-info">
+                        <h3 class="title is-3">Plakat - AI Forum 2025</h3>
+                        <p class="is-size-5">
+                            Ten poster przedstawia nasze badania i prace rozwojowe nad projektem Fotobudka, 
+                            including architekturę techniczną, metodologię AI i wyniki eksperymentalne.
+                        </p>
+                        
+                        <!-- ICCS 2025 Paper -->
+                        <div class="paper-highlight mt-5 p-4" style="background: rgba(0, 0, 0, 0.03); border-radius: 12px; border-left: 4px solid #000;">
+                            <h4 class="title is-5 mb-3">
+                                <i class="fas fa-file-alt mr-2"></i>
+                                Publikacja ICCS 2025
+                            </h4>
+                            <p class="is-size-6 mb-2">
+                                <strong>Nasze badania zostały przedstawione na International Conference on Computational Science (ICCS) 2025</strong>
+                            </p>
+                            <p class="is-size-7 has-text-grey mb-3">
+                                Preprint dostępny na arXiv
+                            </p>
+                            <a href="https://arxiv.org/abs/2505.02255" class="button is-outlined is-small" target="_blank" rel="noopener">
+                                <span class="icon">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </span>
+                                <span>Zobacz preprint</span>
+                            </a>
+                        </div>
+                        
+                        <!-- Research Highlights -->
+                        <div class="research-highlights mt-6">
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-brain" aria-hidden="true"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h4 class="title is-6">Potok oparty na FLUX.1-dev i DreamO</h4>
+                                    <p class="is-size-7">Metody state-of-the-art w dziedzinie generowania i personalizacji obrazów</p>
+                                </div>
+                            </div>
+                            
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-chart-line" aria-hidden="true"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h4 class="title is-6">Porównanie metod</h4>
+                                    <p class="is-size-7">Sprawdzamy, jak DreamO wypada w porównaniu do UNO, InfiniteYou czy InstantID</p>
+                                </div>
+                            </div>
+                            
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-cogs" aria-hidden="true"></i>
+                                </div>
+                                <div class="highlight-content">
+                                    <h4 class="title is-6">Autorskie ulepszenia</h4>
+                                    <p class="is-size-7">Moduły weryfikacji i postprocessingu, a także dostrojenie FLUX.1-dev do dziedziny estetycznych portretów</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="poster-actions mt-6">
+                            <button class="button is-large is-primary mb-3 is-fullwidth" onclick="openModal()">
+                                <span class="icon">
+                                    <i class="fas fa-expand"></i>
+                                </span>
+                                <span>Pełny rozmiar</span>
+                            </button>
+                            <a href="assets/poster.png" download="fotobudka-poster.png" 
+                               class="button is-large is-outlined is-fullwidth">
+                                <span class="icon">
+                                    <i class="fas fa-download"></i>
+                                </span>
+                                <span>Pobierz</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for full-size poster -->
+    <div id="posterModal" class="modal">
+        <div class="modal-background" onclick="closeModal()"></div>
+        <div class="modal-content">
+            <p class="image">
+                <img src="assets/poster.png" alt="Fotobudka Research Poster">
+            </p>
+        </div>
+        <button class="modal-close is-large" aria-label="close" onclick="closeModal()"></button>
+    </div>
+
+    <!-- Open Source Repositories Section -->
+    <section class="section repositories-section">
+        <div class="container">
+            <div class="has-text-centered mb-6">
+                <h2 class="title is-2">
+                    <i class="fab fa-github mr-3" aria-hidden="true"></i>
+                    Repozytoria open source
+                </h2>
+                <p class="subtitle is-5">
+                    Nasze projekty dostępne publicznie na GitHub
+                </p>
+            </div>
+            
+            <div class="columns is-multiline">
+                <!-- Repository 1 -->
+                <div class="column is-4">
+                    <div class="card repo-card">
+                        <div class="card-content">
+                            <div class="repo-header">
+                                <div class="repo-icon">
+                                    <i class="fas fa-brain" aria-hidden="true"></i>
+                                </div>
+                                <div class="repo-info">
+                                    <h3 class="title is-5 repo-name">comfyui-ai-faces</h3>
+                                    <p class="subtitle is-7 repo-language">ComfyUI • Insightface</p>
+                                </div>
+                            </div>
+                            <div class="content repo-description">
+                                <p>Autorski węzeł ComfyUI do przeprowadzania weryfikacji twarzy pod kątem jakości zdjęcia wejściowego.</p>
+                            </div>
+                            <div class="repo-actions mt-4">
+                                <a href="https://github.com/fotobudka-team/comfyui-ai-faces" class="button is-outlined is-fullwidth" target="_blank" rel="noopener">
+                                    <span class="icon">
+                                        <i class="fab fa-github"></i>
+                                    </span>
+                                    <span>Zobacz repozytorium</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Repository 2 -->
+                <div class="column is-4">
+                    <div class="card repo-card">
+                        <div class="card-content">
+                            <div class="repo-header">
+                                <div class="repo-icon">
+                                    <i class="fas fa-globe" aria-hidden="true"></i>
+                                </div>
+                                <div class="repo-info">
+                                    <h3 class="title is-5 repo-name">ai-faces-toolkit</h3>
+                                    <p class="subtitle is-7 repo-language">PyTorch • Lightning • Diffusers</p>
+                                </div>
+                            </div>
+                            <div class="content repo-description">
+                                <p>Zbiór skryptów treningowych i inferencyjnych do badań na dużych modelach generatywnych.</p>
+                            </div>
+                            <div class="repo-actions mt-4">
+                                <a href="https://github.com/fotobudka-team/ai-faces-toolkit" class="button is-outlined is-fullwidth" target="_blank" rel="noopener">
+                                    <span class="icon">
+                                        <i class="fab fa-github"></i>
+                                    </span>
+                                    <span>Zobacz repozytorium</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Repository 3 -->
+                <div class="column is-4">
+                    <div class="card repo-card">
+                        <div class="card-content">
+                            <div class="repo-header">
+                                <div class="repo-icon">
+                                    <i class="fas fa-database" aria-hidden="true"></i>
+                                </div>
+                                <div class="repo-info">
+                                    <h3 class="title is-5 repo-name">ab-image-comparison</h3>
+                                    <p class="subtitle is-7 repo-language">Python • Streamlit</p>
+                                </div>
+                            </div>
+                            <div class="content repo-description">
+                                <p>Narzędzie GUI do anotowania zdjęć parami.</p>
+                            </div>
+                            <div class="repo-actions mt-4">
+                                <a href="https://github.com/fotobudka-team/ab-image-comparison" class="button is-outlined is-fullwidth" target="_blank" rel="noopener">
+                                    <span class="icon">
+                                        <i class="fab fa-github"></i>
+                                    </span>
+                                    <span>Zobacz repozytorium</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="has-text-centered mt-6">
+                <a href="https://github.com/fotobudka-team" class="button is-large is-primary" target="_blank" rel="noopener">
+                    <span class="icon">
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <span>Zobacz wszystkie</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer footer-dark">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-6">
+                    <div class="footer-brand">
+                        <span class="brand-text">
+                            <i class="fas fa-camera-retro brand-icon" aria-hidden="true"></i>
+                            Fotobudka
+                        </span>
+                        <p class="footer-tagline mt-2">Redefiniujemy fotografię z AI</p>
+                    </div>
+                </div>
+                <div class="column is-6">
+                    <div class="footer-links has-text-right-desktop">
+                        <a href="mailto:hello@fotobudka.app" class="footer-link" aria-label="Napisz do nas">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/fotobudka-team" class="footer-link" aria-label="GitHub">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="has-text-centered">
+                <p class="footer-copyright">
+                    © 2025 Fotobudka. Wszelkie prawa zastrzeżone.
+                </p>
+                <p class="footer-copyright">
+                    FLUX.1-dev © 2024-2025 Black Forest Labs. Dozwolony wyłącznie użytek niekomercyjny.
+                </p>
+                <div class="footer-tech mt-2">
+                    <img src="assets/Pwr_logo.png" alt="Politechnika Wrocławska Logo" style="height:64px; vertical-align:middle; margin-right:10px;">
+                    <img src="assets/pwr-ai.png" alt="PWr AI Logo" style="height:64px; vertical-align:middle;">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

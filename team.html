@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zespół - Fotobudka AI</title>
+    <meta name="description" content="Poznaj utalentowany zespół stojący za technologią przetwarzania zdjęć AI Fotobudka.">
+    <meta name="keywords" content="zespół AI, eksperci computer vision, badacze machine learning, deweloperzy przetwarzania zdjęć">
+    <meta name="author" content="Zespół Fotobudka">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Zespół - Fotobudka AI">
+    <meta property="og:description" content="Poznaj utalentowany zespół stojący za technologią przetwarzania zdjęć AI."
+    <meta property="og:image" content="assets/team/team-hero.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📸</text></svg>">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html" aria-label="Fotobudka Strona Główna">
+                <span class="brand-text">
+                    <i class="fas fa-camera-retro brand-icon" aria-hidden="true"></i>
+                    Fotobudka
+                </span>
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasic" class="navbar-menu">
+            <div class="navbar-end">
+                <a href="index.html" class="navbar-item">
+                    <span class="icon-text">
+                        <span class="icon"><i class="fas fa-play" aria-hidden="true"></i></span>
+                        <span>Demo</span>
+                    </span>
+                </a>
+                <a href="poster.html" class="navbar-item">
+                    <span class="icon-text">
+                        <span class="icon"><i class="fas fa-file-image" aria-hidden="true"></i></span>
+                        <span>Plakat i publikacje</span>
+                    </span>
+                </a>
+                <a href="team.html" class="navbar-item is-active" aria-current="page">
+                    <span class="icon-text">
+                        <span class="icon"><i class="fas fa-users" aria-hidden="true"></i></span>
+                        <span>Zespół</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero is-medium hero-dark">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="hero-content">
+                    <h1 class="title is-1 hero-title">
+                        <i class="fas fa-users mr-3" aria-hidden="true"></i>
+                        Nasz zespół
+                    </h1>
+                    <h2 class="subtitle is-4 hero-subtitle">
+                        Osoby stojące za Fotobudką AI
+                    </h2>
+                    <div class="hero-badges mt-5">
+                        <span class="tag is-light is-medium mr-2">
+                            <i class="fas fa-brain mr-2" aria-hidden="true"></i>
+                            Absolwenci AI @ PWr 2025
+                        </span>
+                        <span class="tag is-light is-medium mr-2">
+                            <i class="fas fa-code mr-2" aria-hidden="true"></i>
+                            Fullstack Development
+                        </span>
+                        <span class="tag is-light is-medium">
+                            <i class="fas fa-rocket mr-2" aria-hidden="true"></i>
+                            Machine Learning
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="section team-section">
+        <div class="container">
+            <div class="columns is-multiline is-centered">
+                
+                <!-- Team Member 1 -->
+                <div class="column is-4-desktop is-6-tablet">
+                    <div class="card team-card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-96x96 member-avatar">
+                                        <img src="assets/team/jakub.png" alt="Jakub Wąsala" class="is-rounded">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <h3 class="title is-4 member-name">Jakub Wąsala</h3>
+                                    <p class="subtitle is-6 member-role">
+                                        <i class="fas fa-user-tie mr-2" aria-hidden="true"></i>
+                                        AI Research
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="member-contacts">
+                                <a href="mailto:jakub@randomseed.eu" class="button is-small contact-btn email" title="Napisz email">
+                                    <span class="icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                </a>
+                                <a href="https://github.com/jwasala" class="button is-small contact-btn github" title="Profil GitHub">
+                                    <span class="icon">
+                                        <i class="fab fa-github"></i>
+                                    </span>
+                                </a>
+                                <a href="https://linkedin.com/in/jwasala" class="button is-small contact-btn linkedin" title="Profil LinkedIn">
+                                    <span class="icon">
+                                        <i class="fab fa-linkedin"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="column is-4-desktop is-6-tablet">
+                    <div class="card team-card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-96x96 member-avatar">
+                                        <img src="assets/team/bartek.png" alt="Bartłomiej Wrzalski" class="is-rounded">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <h3 class="title is-4 member-name">Bartłomiej Wrzalski</h3>
+                                    <p class="subtitle is-6 member-role">
+                                        <i class="fas fa-code mr-2" aria-hidden="true"></i>
+                                        AI Research
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="member-contacts">
+                                <a href="mailto:bartekwrzalski@gmail.com" class="button is-small contact-btn email" title="Napisz email">
+                                    <span class="icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                </a>
+                                <a href="https://github.com/BartekWrzalski" class="button is-small contact-btn github" title="Profil GitHub">
+                                    <span class="icon">
+                                        <i class="fab fa-github"></i>
+                                    </span>
+                                </a>
+                                <a href="https://www.linkedin.com/in/bartekwrzalski" class="button is-small contact-btn linkedin" title="Profil LinkedIn">
+                                    <span class="icon">
+                                        <i class="fab fa-linkedin"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="column is-4-desktop is-6-tablet">
+                    <div class="card team-card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-96x96 member-avatar">
+                                        <img src="assets/team/kornelia.png" alt="Kornelia Noculak" class="is-rounded">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <h3 class="title is-4 member-name">Kornelia Noculak</h3>
+                                    <p class="subtitle is-6 member-role">
+                                        <i class="fas fa-server mr-2" aria-hidden="true"></i>
+                                        AI Research
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="member-contacts">
+                                <a href="mailto:noculakkx@gmail.com" class="button is-small contact-btn email" title="Napisz email">
+                                    <span class="icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="column is-4-desktop is-6-tablet">
+                    <div class="card team-card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-96x96 member-avatar">
+                                        <img src="assets/team/julia.png" alt="Yuliia Tarasenko" class="is-rounded">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <h3 class="title is-4 member-name">Yuliia Tarasenko</h3>
+                                    <p class="subtitle is-6 member-role">
+                                        <i class="fas fa-chart-line mr-2" aria-hidden="true"></i>
+                                        AI Research
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="member-contacts">
+                                <a href="mailto:juliet.tarasenko@gmail.com " class="button is-small contact-btn email" title="Napisz email">
+                                    <span class="icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                </a>
+                                <a href="https://github.com/jultarasenko" class="button is-small contact-btn github" title="Profil GitHub">
+                                    <span class="icon">
+                                        <i class="fab fa-github"></i>
+                                    </span>
+                                </a>
+                                <a href="https://www.linkedin.com/in/julitarasenko" class="button is-small contact-btn linkedin" title="Profil LinkedIn">
+                                    <span class="icon">
+                                        <i class="fab fa-linkedin"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 5 -->
+                <div class="column is-4-desktop is-6-tablet">
+                    <div class="card team-card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-96x96 member-avatar">
+                                        <img src="assets/team/oliwer.png" alt="Oliwer Krupa" class="is-rounded">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <h3 class="title is-4 member-name">Oliwer Krupa</h3>
+                                    <p class="subtitle is-6 member-role">
+                                        <i class="fas fa-cloud mr-2" aria-hidden="true"></i>
+                                        AI Research
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="member-contacts">
+                                <a href="mailto:oliwer2426@gmail.com`" class="button is-small contact-btn email" title="Napisz email">
+                                    <span class="icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                </a>
+                                <a href="https://github.com/Oliwer-Krupa" class="button is-small contact-btn github" title="Profil GitHub">
+                                    <span class="icon">
+                                        <i class="fab fa-github"></i>
+                                    </span>
+                                </a>
+                                <a href="https://www.linkedin.com/in/oliwer-krupa" class="button is-small contact-btn linkedin" title="Profil LinkedIn">
+                                    <span class="icon">
+                                        <i class="fab fa-linkedin"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Stats Section -->
+    <section class="section team-stats-section">
+        <div class="container">
+            <div class="columns is-multiline has-text-centered">
+                <div class="column is-3">
+                    <div class="stat-item">
+                        <div class="stat-number">100K+</div>
+                        <div class="stat-label">Wygenerowanych zdjęć</div>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="stat-item">
+                        <div class="stat-number">10K+</div>
+                        <div class="stat-label">Godzin obliczeń GPU</div>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="stat-item">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">Wytrenowanych modeli</div>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <div class="stat-item">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Zbadanych metodyk</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer footer-dark">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-6">
+                    <div class="footer-brand">
+                        <span class="brand-text">
+                            <i class="fas fa-camera-retro brand-icon" aria-hidden="true"></i>
+                            Fotobudka
+                        </span>
+                        <p class="footer-tagline mt-2">Redefiniujemy fotografię z AI</p>
+                    </div>
+                </div>
+                <div class="column is-6">
+                    <div class="footer-links has-text-right-desktop">
+                        <a href="mailto:hello@fotobudka.app" class="footer-link" aria-label="Napisz do nas">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/fotobudka-team" class="footer-link" aria-label="GitHub">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="has-text-centered">
+                <p class="footer-copyright">
+                    © 2025 Fotobudka. Wszelkie prawa zastrzeżone.
+                </p>
+                <p class="footer-copyright">
+                    FLUX.1-dev © 2024-2025 Black Forest Labs. Dozwolony wyłącznie użytek niekomercyjny.
+                </p>
+                <div class="footer-tech mt-2">
+                    <img src="assets/Pwr_logo.png" alt="Politechnika Wrocławska Logo" style="height:64px; vertical-align:middle; margin-right:10px;">
+                    <img src="assets/pwr-ai.png" alt="PWr AI Logo" style="height:64px; vertical-align:middle;">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
