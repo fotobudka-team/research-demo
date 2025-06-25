@@ -73,7 +73,7 @@ assets/
 - Modify roles and descriptions
 
 **Update Demo URL** in `index.html`:
-- Currently set to: `https://44bd5ef207d775e4cd.gradio.live/?__theme=light`
+- Currently set to: `https://eaa815602f4fc7e3be.gradio.live/?__theme=light`
 - Replace with your actual Gradio demo URL
 
 ### 3. GitHub Pages Deployment
