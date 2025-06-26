@@ -1,30 +1,30 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fotobudka</title>
-    <meta name="description" content="Doświadcz przyszłości fotografii z Fotobudką - aplikacją napędzaną AI, która przekształca Twoje zdjęcia za pomocą sztucznej inteligencji.">
-    <meta name="keywords" content="fotografia AI, budka fotograficzna, sztuczna inteligencja, przetwarzanie obrazów, computer vision">
-    <meta name="author" content="Zespół Fotobudka">
-    
+    <meta name="description" content="Experience the future of photography with Fotobudka - an AI-powered app that transforms your photos using artificial intelligence.">
+    <meta name="keywords" content="AI photography, photo booth, artificial intelligence, image processing, computer vision">
+    <meta name="author" content="Fotobudka Team">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="">
-    <meta property="og:title" content="Fotobudka - Przyszłość Fotografii z AI">
-    <meta property="og:description" content="Doświadcz przyszłości fotografii z przetwarzaniem obrazów napędzanym AI.">
+    <meta property="og:title" content="Fotobudka - The Future of AI Photography">
+    <meta property="og:description" content="Experience the future of photography with AI-powered image processing.">
     <meta property="og:image" content="assets/poster.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="">
-    <meta property="twitter:title" content="Fotobudka - Przyszłość Fotografii z AI">
-    <meta property="twitter:description" content="Doświadcz przyszłości fotografii z przetwarzaniem obrazów napędzanym AI.">
+    <meta property="twitter:title" content="Fotobudka - The Future of AI Photography">
+    <meta property="twitter:description" content="Experience the future of photography with AI-powered image processing.">
     <meta property="twitter:image" content="assets/poster.jpg">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📸</text></svg>">
-    
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
@@ -32,7 +32,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    
+
     <!-- Performance optimizations -->
     <link rel="dns-prefetch" href="//1b559a64a5923e2d52.gradio.live">
     <link rel="preconnect" href="https://1b559a64a5923e2d52.gradio.live">
@@ -41,7 +41,7 @@
     <!-- Navigation -->
     <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <a class="navbar-item" href="index.html" aria-label="Fotobudka Strona Główna">
+            <a class="navbar-item" href="index.html" aria-label="Fotobudka Home">
                 <span class="brand-text">
                     <i class="fas fa-camera-retro brand-icon" aria-hidden="true"></i>
                     Fotobudka
@@ -65,13 +65,13 @@
                 <a href="poster.html" class="navbar-item">
                     <span class="icon-text">
                         <span class="icon"><i class="fas fa-file-image" aria-hidden="true"></i></span>
-                        <span>Plakat i publikacje</span>
+                        <span>Poster & Publications</span>
                     </span>
                 </a>
                 <a href="team.html" class="navbar-item">
                     <span class="icon-text">
                         <span class="icon"><i class="fas fa-users" aria-hidden="true"></i></span>
-                        <span>Zespół</span>
+                        <span>Team</span>
                     </span>
                 </a>
             </div>
@@ -88,27 +88,27 @@
                         Fotobudka
                     </h1>
                     <h2 class="subtitle is-4 hero-subtitle">
-                        Przekształć swoje zdjęcia z AI
+                        Transform your photos with AI
                     </h2>
                     <div class="hero-cta">
                         <a href="#demo" class="button is-large cta-button">
                             <span class="icon">
                                 <i class="fas fa-play" aria-hidden="true"></i>
                             </span>
-                            <span>Wypróbuj demo</span>
+                            <span>Try the demo</span>
                         </a>
                         <a href="poster.html" class="button is-large cta-button-secondary">
                             <span class="icon">
                                 <i class="fas fa-file-pdf" aria-hidden="true"></i>
                             </span>
-                            <span>Plakat i publikacje</span>
+                            <span>Poster & Publications</span>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="hero-scroll-indicator">
-            <a href="#demo" aria-label="Przewiń do demo">
+            <a href="#demo" aria-label="Scroll to demo">
                 <i class="fas fa-chevron-down" aria-hidden="true"></i>
             </a>
         </div>
@@ -119,44 +119,32 @@
         <div class="container is-fluid px-0">
             <div class="demo-container">
                 <div class="demo-iframe-wrapper">
-                    <div class="iframe-container">
-                        <iframe 
-                            src="https://1b559a64a5923e2d52.gradio.live/?__theme=light" 
-                            title="Fotobudka AI Demo - Interaktywne przetwarzanie zdjęć ze sztuczną inteligencją"
-                            allow="camera; microphone; fullscreen"
-                            allowfullscreen
-                            loading="lazy">
-                        </iframe>
-                        <div class="loading-overlay">
-                            <div class="loading-content">
-                                <div class="loader"></div>
-                                <p class="mt-4 loading-text">Inicjalizacja Demo AI...</p>
-                                <p class="loading-subtext">Ładowanie zaawansowanych modeli przetwarzania obrazów</p>
-                            </div>
-                        </div>
+                    <div class="iframe-container has-text-centered p-6">
+                        <h2 class="title is-3">Thank you for participating in our first demo</h2>
+                        <p class="subtitle is-5">Stay tuned for a second version</p>
+                        <p class="mt-4">&mdash; Fotobudka AI Team</p>
                     </div>
                 </div>
-                
                 <div class="demo-info has-text-centered mt-6">
                     <div class="columns is-centered">
                         <div class="column is-8">
                             <div class="content">
                                 <p class="is-size-5 has-text-grey">
                                     <i class="fas fa-info-circle mr-2" aria-hidden="true"></i>
-                                    To interaktywne demo prezentuje możliwości metody FLUX+DreamO wraz z naszym autorskim fine-tuningiem oraz postprocessingiem.
+                                    This interactive demo showcased the FLUX+DreamO method with our custom fine-tuning and postprocessing pipeline.
                                 </p>
                                 <div class="demo-actions mt-4">
                                     <a href="team.html" class="button is-outlined">
                                         <span class="icon">
                                             <i class="fas fa-users" aria-hidden="true"></i>
                                         </span>
-                                        <span>Poznaj zespół</span>
+                                        <span>Meet the team</span>
                                     </a>
                                     <a href="poster.html" class="button is-outlined">
                                         <span class="icon">
                                             <i class="fas fa-microscope" aria-hidden="true"></i>
                                         </span>
-                                        <span>Zobacz plakat</span>
+                                        <span>See the poster</span>
                                     </a>
                                 </div>
                             </div>
@@ -177,12 +165,12 @@
                             <i class="fas fa-camera-retro brand-icon" aria-hidden="true"></i>
                             Fotobudka
                         </span>
-                        <p class="footer-tagline mt-2">Redefiniujemy fotografię z AI</p>
+                        <p class="footer-tagline mt-2">We redefine photography with AI</p>
                     </div>
                 </div>
                 <div class="column is-6">
                     <div class="footer-links has-text-right-desktop">
-                        <a href="mailto:hello@fotobudka.app" class="footer-link" aria-label="Napisz do nas">
+                        <a href="mailto:hello@fotobudka.app" class="footer-link" aria-label="Email us">
                             <i class="fas fa-envelope" aria-hidden="true"></i>
                         </a>
                         <a href="https://github.com/fotobudka-team" class="footer-link" aria-label="GitHub">
@@ -194,13 +182,13 @@
             <hr class="footer-divider">
             <div class="has-text-centered">
                 <p class="footer-copyright">
-                    © 2025 Fotobudka. Wszelkie prawa zastrzeżone.
+                    © 2025 Fotobudka. All rights reserved.
                 </p>
                 <p class="footer-copyright">
-                    FLUX.1-dev © 2024-2025 Black Forest Labs. Dozwolony wyłącznie użytek niekomercyjny.
+                    FLUX.1-dev © 2024-2025 Black Forest Labs. Non-commercial use only.
                 </p>
                 <div class="footer-tech mt-2">
-                    <img src="assets/Pwr_logo.png" alt="Politechnika Wrocławska Logo" style="height:64px; vertical-align:middle; margin-right:10px;">
+                    <img src="assets/Pwr_logo.png" alt="Wrocław University of Science and Technology Logo" style="height:64px; vertical-align:middle; margin-right:10px;">
                     <img src="assets/pwr-ai.png" alt="PWr AI Logo" style="height:64px; vertical-align:middle;">
                 </div>
             </div>
@@ -209,10 +197,9 @@
 
     <!-- Scripts -->
     <script src="script.js"></script>
-    
+
     <!-- Performance monitoring (remove in production) -->
     <script>
-        // Log page load time
         window.addEventListener('load', function() {
             const loadTime = window.performance.timing.loadEventEnd - window.performance.timing.navigationStart;
             console.log('Page loaded in ' + loadTime + 'ms');
